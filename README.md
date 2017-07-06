@@ -13,13 +13,13 @@ MinerGate-CLI supports Bytecoin (BCN), Monero (XMR), Quazarcoin (QCN), DigitalNo
 Run in background:
 
 ```console
-$ docker run -d --name YOUR_CONTAINER_NAME minecoins/minergate-cli -user YOUR_EMAIL -CURRENCY
+$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -user YOUR_EMAIL -CURRENCY
 ```
 
 Get minergate-cli options with:
 
 ```console
-$ docker run --rm minecoins/minergate-cli -help
+$ docker run --rm calvintam236/minergate-cli -help
 ```
 
 Fetch logs of a container:
