@@ -1,10 +1,10 @@
-# What is Minergate-cli?
+# What is MinerGate-CLI?
 
-Minergate-cli is the console miner provided by [MinerGate](http://rebrand.ly/minergate).
+MinerGate-CLI is the console miner provided by [MinerGate](http://rebrand.ly/minergate).
 
 MinerGate is a mining pool created by a group of cryptocoin enthusiast.
 
-User-friendly miner supports Bytecoin, Monero, Quazarcoin, Litecoin, DarkNote, Fantomcoin, MonetaVerde, Aeon coin, Dashcoin and Infinium-8.
+MinerGate-CLI supports Bytecoin (BCN), Monero (XMR), Quazarcoin (QCN), DigitalNote (XDN), Fantomcoin (FCN), MonetaVerde (MCN), Aeon coin (AEON), Dashcoin (DSH), and Infinium-8 (INF8).
 
 ![logo](https://scontent.cdninstagram.com/t51.2885-19/s150x150/11939576_895926810497744_2081713499_a.jpg)
 
@@ -13,7 +13,7 @@ User-friendly miner supports Bytecoin, Monero, Quazarcoin, Litecoin, DarkNote, F
 Run in background:
 
 ```console
-$ docker run -d --name some-minergate-cli minecoins/minergate-cli -user cryptocurrencies.miner@gmail.com -xmr
+$ docker run -d --name YOUR_CONTAINER_NAME minecoins/minergate-cli -user YOUR_EMAIL -CURRENCY
 ```
 
 Get minergate-cli options with:
@@ -25,13 +25,5 @@ $ docker run --rm minecoins/minergate-cli -help
 Fetch logs of a container:
 
 ```console
-$ docker logs some-minergate-cli
+$ docker logs YOUR_CONTAINER_NAME
 ```
-
-# Donations
-
-Donations for work on dockerizing are accepted at:
-
-- XMR: `49TfoHGd6apXxNQTSHrMBq891vH6JiHmZHbz5Vx36nLRbz6WgcJunTtgcxnoG6snKFeGhAJB5LjyAEnvhBgCs5MtEgML3LU`
-- BCN: `25HFYXMSmBVWcTYJNyJGSMVxvSut88KKdhXfFSyTTkRQKgANqyoK9kHhhBmF2CUV3y1D1iyGwnVEW3Cm3QQjMsTTHBcWhzG`
-- BTC: `1NUMFM6UTv9iRVVzjsfhzbAGjwNxQRA8Qz`

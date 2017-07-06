@@ -1,1 +1,1 @@
-Minergate-cli is the console miner provided by MinerGate.
+MinerGate-CLI in Docker. Supports CPU & GPU mining.
