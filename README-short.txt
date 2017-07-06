@@ -1,1 +1,0 @@
-MinerGate-CLI in Docker. Supports CPU & GPU mining.
