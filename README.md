@@ -1,6 +1,6 @@
 # What is MinerGate-CLI?
 
-MinerGate-CLI is the console miner provided by [MinerGate](http://rebrand.ly/minergate).
+MinerGate-CLI is the console miner provided by [MinerGate](https://minergate.com/).
 
 MinerGate is a mining pool created by a group of cryptocoin enthusiast.
 
