@@ -2,18 +2,20 @@
 
 MinerGate-CLI is the console miner provided by [MinerGate](https://minergate.com/).
 
-MinerGate is a mining pool created by a group of cryptocoin enthusiast.
-
 MinerGate-CLI supports Bytecoin (BCN), Monero (XMR), Quazarcoin (QCN), DigitalNote (XDN), Fantomcoin (FCN), MonetaVerde (MCN), Aeon coin (AEON), Dashcoin (DSH), and Infinium-8 (INF8).
-
-![logo](https://scontent.cdninstagram.com/t51.2885-19/s150x150/11939576_895926810497744_2081713499_a.jpg)
 
 # How to use this image
 
-Run in background:
+Run in background with MinerGate:
 
 ```console
-$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -user YOUR_EMAIL -CURRENCY
+$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -user YOUR_USERNAME -CURRENCY
+```
+
+Run in background with other pools:
+
+```console
+$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -o YOUR_POOL_ADDRESS -u YOUR_USERNAME -CURRENCY
 ```
 
 Get minergate-cli options with:
