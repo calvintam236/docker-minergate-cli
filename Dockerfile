@@ -4,11 +4,12 @@ MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
 LABEL description="MinerGate-CLI in Docker. Supports CPU & GPU mining."
 
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install ca-certificates wget \
+    && apt-get -y --no-install-recommends install ca-certificates curl wget \
     && rm -r /var/lib/apt/lists/*
 
-RUN wget --content-disposition https://minergate.com/download/deb-cli -O minergate-cli.deb \
-    && dpkg -i minergate-cli.deb \
-    && rm minergate-cli.deb
+WORKDIR /tmp
+RUN curl -L -O https://minergate.com/download/deb-cli \
+    && dpkg -i deb-cli \
+    && rm deb-cli
 
 ENTRYPOINT ["minergate-cli"]
