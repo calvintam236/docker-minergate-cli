@@ -11,6 +11,8 @@ RUN apt-get update \
     && dpkg -i deb-cli \
     && rm deb-cli \
     && apt-get -y remove ca-certificates curl \
-    && rm -r /var/lib/apt/lists/*
+    && apt-get -y autoremove \
+    && apt-get clean autoclean \
+    && rm -r /var/lib/{apt,dpkg,cache,log}/
 
 ENTRYPOINT ["minergate-cli"]
