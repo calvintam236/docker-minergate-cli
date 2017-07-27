@@ -6,16 +6,28 @@ MinerGate-CLI supports Bytecoin (BCN), Monero (XMR), Quazarcoin (QCN), DigitalNo
 
 # How to use this image
 
-Run in background with MinerGate:
+Run in background with CPU mining and MinerGate:
 
 ```console
-$ docker run -d --device /dev/dri:/dev/dri --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -user YOUR_USERNAME --CURRENCY(IES) CORE(S)
+$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -user YOUR_USERNAME --CURRENCY(IES) CORE(S)
 ```
 
-Run in background with other pools:
+Run in background with CPU mining and other pools:
 
 ```console
-$ docker run -d --device /dev/dri:/dev/dri --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -o YOUR_POOL_ADDRESS -u YOUR_USERNAME --CURRENCY(IES) CORE(S)
+$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -o YOUR_POOL_ADDRESS -u YOUR_USERNAME --CURRENCY(IES) CORE(S)
+```
+
+Run in background with Nvidia (CUDA) GPU mining and MinerGate:
+
+```console
+$ docker run -d --device=/dev/nvidiactl --device=/dev/nvidia-uvm --device=/dev/nvidia0 --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -user YOUR_USERNAME --CURRENCY(IES) CORE(S)
+```
+
+Run in background with Nvidia (CUDA) GPU mining and other pools:
+
+```console
+$ docker run -d --device=/dev/nvidiactl --device=/dev/nvidia-uvm --device=/dev/nvidia0 --name YOUR_CONTAINER_NAME calvintam236/minergate-cli -o YOUR_POOL_ADDRESS -u YOUR_USERNAME --CURRENCY(IES) CORE(S)
 ```
 
 Get `minergate-cli` options with:
