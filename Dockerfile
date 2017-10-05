@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM calvintam236/ubuntu:nvidia
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
 LABEL description="MinerGate-CLI in Docker. Supports CPU & GPU mining."
